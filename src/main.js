@@ -1,4 +1,14 @@
-const rp = require("request-promise");
+const request = require("request-promise");
+const R = require("rambda");
+const YAML = require("yamljs");
+
+/* --- */
+
+const config = YAML.load("config.YAML");
+
+const requiredConfig = ["username"];
+
+/* --- */
 
 const pollInterval = 1000;
 
@@ -17,6 +27,9 @@ const mainLoop = (interval, func) =>
   );
 
 const program = () =>
-  rp("https://www.google.com").then(result => console.log(result));
+  request({
+    uri: "https://www.google.com",
+    json: true
+  }).then(result => console.log(result));
 
 mainLoop(pollInterval, program);

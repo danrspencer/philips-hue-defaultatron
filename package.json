@@ -6,7 +6,9 @@
     "flow": "flow"
   },
   "dependencies": {
-    "request-promise": "^4.2.0"
+    "rambda": "^0.5.6",
+    "request-promise": "^4.2.0",
+    "yamljs": "^0.2.9"
   },
   "devDependencies": {
     "flow-bin": "^0.43.1",

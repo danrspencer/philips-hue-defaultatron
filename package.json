@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "",
+    "build": "",
+    "test": "",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "request-promise": "^4.2.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.43.1",
+    "prettier": "^0.22.0"
+  }
+}
